@@ -62,7 +62,7 @@ export default function CreatePostModal({posts, setPosts}) {
             <CardBody>
             <Box className='flex gap-1 items-center'>
                 <MdKeyboardArrowLeft size={48} className='cursor-pointer' onClick={() => router.back()}/>
-                <Heading className="text-[#02054B] text-md ">Create Post {state}</Heading>
+                <Heading className="text-[#02054B] text-md ">Create Post</Heading>
             </Box>
             <form className='p-3 gap-4' onSubmit={handleSubmit(onSubmit)}>
                 <FormControl id="title" isInvalid={errors.title}>
