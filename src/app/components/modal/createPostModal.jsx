@@ -19,7 +19,7 @@ import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import { useEffect } from 'react';
 
-export default function CreatePostModal({posts, setPosts}) {
+export default function CreatePostModal({posts, setPosts, setShowModal}) {
     const router = useRouter()
 
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -52,6 +52,9 @@ export default function CreatePostModal({posts, setPosts}) {
                     res
                 }
               ])
+              setShowModal({
+                createModal: false
+              })
             }
           });
     }})

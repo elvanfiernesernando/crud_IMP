@@ -163,7 +163,7 @@ const Post = () => {
 
           {showModal.createModal && (
             <Box state={coba} className="w-screen h-screen fixed top-0 left-0 right-0 z-[20] flex justify-center items-center">
-              <CreatePostModal state={posts} setPosts={setPosts}/>
+              <CreatePostModal state={posts} setPosts={setPosts} setShowModal={setShowModal}/>
 
               {/* background modal */}
               <div className='w-screen h-screen absolute z-[-1] backdrop-brightness-50 backdrop-blur-sm' onClick={()=>{
